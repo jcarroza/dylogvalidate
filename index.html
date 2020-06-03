@@ -10,14 +10,45 @@
 	<link rel="dns-prefetch" href="//rcom.dynamicyield.com">
 	<script type="text/javascript" src="//cdn.dynamicyield.com/api/8773757/api_dynamic.js"></script>
 	<script type="text/javascript" src="//cdn.dynamicyield.com/api/8773757/api_static.js"></script>
+	<style type="text/css">
+		.column {
+				float: left;
+				width: 33.33%;
+			}
+
+/* Clear floats after the columns */
+		.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+	</style>
 </head>
 <body>
-	<div id="dy_Caluga2"></div>
-	<script type="text/javascript">
-		DYO.smartObject("Caluga2", {
-			target: "dy_Caluga2",
-			inline: true
-		});
-	</script>
+	<div class="row">
+		<div class="column">
+			<div id="dy_Caluga1"></div>
+			<script type="text/javascript">
+				DYO.smartObject("Caluga2", {
+					target: "dy_Caluga2",
+					inline: true
+				});
+			</script>
+			<div id="dy_Caluga2"></div>
+			<script type="text/javascript">
+				DYO.smartObject("Caluga2", {
+					target: "dy_Caluga2",
+					inline: true
+				});
+			</script>
+			<div id="dy_Caluga3"></div>
+			<script type="text/javascript">
+				DYO.smartObject("Caluga2", {
+					target: "dy_Caluga2",
+					inline: true
+				});
+			</script>
+		</div>
+	</div>
 </body>
 </html>
