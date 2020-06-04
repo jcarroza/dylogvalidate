@@ -17,15 +17,15 @@
 		var hash = window.location.href.split("#")[1];
 		var nuevope = document.createElement("DIV");
 		nuevope.innerHTML = "<p>"+hash+"</p>";
-		document.body.appendChild(nuevope);
+		//document.body.appendChild(nuevope);
 		var rutHash = "CL_RUT_"+hash;//841e92365221c0ccd27c8bd9b39c51a966fad872fd636eda6ce099390836c5a2";
-		DY.API('event', {
+		if(hash){DY.API('event', {
 	        name: 'Login',
 	        properties: {
 	            dyType: 'login-v1',
 	            cuid: rutHash,
 	            cuidType: 'hashID'
-	        }
+	        }}
 	    });
 	</script>>
 	<div class="row">
