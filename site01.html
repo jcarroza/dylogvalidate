@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Site01</title>
+	<title>Master Dy Logs Preview</title>
+	<link rel="preconnect" href="//cdn.dynamicyield.com">
+	<link rel="preconnect" href="//st.dynamicyield.com">
+	<link rel="preconnect" href="//rcom.dynamicyield.com">
+	<link rel="dns-prefetch" href="//cdn.dynamicyield.com">
+	<link rel="dns-prefetch" href="//st.dynamicyield.com">
+	<link rel="dns-prefetch" href="//rcom.dynamicyield.com">
+	<script type="text/javascript" src="//cdn.dynamicyield.com/api/8773757/api_dynamic.js"></script>
+	<script type="text/javascript" src="//cdn.dynamicyield.com/api/8773757/api_static.js"></script>
 	<style type="text/css">
-		.userFrame{
-			width: 100%;
-			border: none;
-		}
+		.column {
+				float: left;
+				width: 33.33%;
+			}
+
+/* Clear floats after the columns */
+		.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
 	</style>
 </head>
 <body>
-	<iframe src="index.html" class="userFrame"></iframe><br>
-	<iframe src="index.html" class="userFrame"></iframe>
+	<div class="row">
+		<div class="column">
+			<div id="dy_Caluga1"></div>
+			<script type="text/javascript">
+				DYO.smartObject("Caluga1", {
+					target: "dy_Caluga1",
+					inline: true
+				});
+			</script>
+		</div>
+		<div class="column">
+			<div id="dy_Caluga2"></div>
+			<script type="text/javascript">
+				DYO.smartObject("Caluga2", {
+					target: "dy_Caluga2",
+					inline: true
+				});
+			</script>
+		</div>
+		<div class="column">
+			<div id="dy_Caluga3"></div>
+			<script type="text/javascript">
+				DYO.smartObject("Caluga3", {
+					target: "dy_Caluga3",
+					inline: true
+				});
+			</script>
+		</div>
+	</div>
 </body>
 </html>
