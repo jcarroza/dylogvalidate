@@ -19,7 +19,7 @@
 		var tiempo = 10000;
 		for(l in lista){
 			console.log(l);
-			setTimeout(crearFrame(lista[l]),tiempo);
+			setTimeout(() => {crearFrame(lista[l])},tiempo);
 			tiempo += 10000;
 		}
 	</script>
