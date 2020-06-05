@@ -18,7 +18,7 @@
 		var nuevope = document.createElement("DIV");
 		nuevope.innerHTML = "<p>"+hash+"</p>";
 		document.body.appendChild(nuevope);
-		var rutHash = "CL_RUT_841e92365221c0ccd27c8bd9b39c51a966fad872fd636eda6ce099390836c5a2";
+		var rutHash = "CL_RUT_"+hash;
 		DY.API('event', {
 	        name: 'Login',
 	        properties: {
@@ -57,6 +57,6 @@
 			</script>
 		</div>
 	</div>
-	<script type="text/javascript">setTimeout(function(){console.log("CL_RUT_"+hash);if(hash!=""){window.location.reload();}}, 8000);</script>
+	<script type="text/javascript">setTimeout(function(){console.log("CL_RUT_"+hash);if(hash!=""){window.location.href("site02.html#"+hash);}}, 8000);</script>
 </body>
 </html>
