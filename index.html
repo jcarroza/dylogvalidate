@@ -6,13 +6,13 @@
 </head>
 <body>
 	<script>
-		var lista = ["eb59bc641d9069cc1294bf53d2205b24542ef1549987a4d67dd2b5edbb5caf41",
-			    "0b1950fa1b40dc20834e2614fba9fe19d98a5612d20db1c935e110011e7ae4f2",
-			    "ab9f96426b639a1b46f584fa5f92f0bc57d9538f0a2156caba1e874de37839d6"
-			    "0e11b9f55393ff580cc36c628296ea178f3374738b00ee4365ba93c45f9db7fd"];
+		var lista = {a:"eb59bc641d9069cc1294bf53d2205b24542ef1549987a4d67dd2b5edbb5caf41",
+			    b:"0b1950fa1b40dc20834e2614fba9fe19d98a5612d20db1c935e110011e7ae4f2",
+			    c:"ab9f96426b639a1b46f584fa5f92f0bc57d9538f0a2156caba1e874de37839d6",
+			    d:"0e11b9f55393ff580cc36c628296ea178f3374738b00ee4365ba93c45f9db7fd"};
 		for(l in lista){
 			console.log(l);
-			var html = "<iframe src='site01.html#"+l+"' class='userFrame'></iframe>";
+			var html = "<iframe src='site01.html#"+lista[l]+"' class='userFrame'></iframe>";
 			var elementoCreado = document.createElement("DIV");
 			elementoCreado.innerHTML = html;
 			document.body.appendChild(elementoCreado);
